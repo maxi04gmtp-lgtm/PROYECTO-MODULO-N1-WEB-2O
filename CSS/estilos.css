@@ -7,3 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.estilo-card{
+  height: 200px;
+  object-fit: cover;
+  object-position: 60% ;
+}
+
+.color-boton-cards{
+  background-color: #ffca28 ;
+  text-decoration: none;
+  color: white;
+}
