@@ -81,9 +81,15 @@
               <div
                 class="d-flex justify-content-between align-items-center mt-4"
               >
-                <a href="#" class="text-small text-decoration-none"
-                  >¿Olvidaste tu contraseña?</a
+                <a
+                  href="#"
+                  class="text-small text-decoration-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#recuperar-contraseña-Modal"
                 >
+                  ¿Olvidaste tu contraseña?
+                </a>
+
                 <button class="btn btn-success">Iniciar Sesión</button>
               </div>
             </form>
@@ -93,7 +99,37 @@
             class="col-md-6 d-flex justify-content-center align-items-center"
           >
             <img src="../img/img inicio-sesion.jpeg" class="img-fluid rounded
-            w-50 alt="login image" />
+            w-50 alt="login imagen" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="recuperar-contraseña-Modal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-4 rounded-3">
+            <h2 class="text-center mb-4 fw-bold fs-2">Recuperar Contraseña</h2>
+            <label class="form-label fw-semibold"> Email </label>
+            <input
+              type="email"
+              class="form-control mb-3"
+              placeholder="ejemplo@gmail.com"
+              maxlength="50"
+              minlength="5"
+              required
+            />
+            <p class="text-center mb-4 small">
+              Recibirás un email para restablecer tu contraseña
+            </p>
+            <div class="text-center">
+              <button class="btn btn-outline-success px-5 py-2">
+                Enviar Email
+              </button>
+            </div>
           </div>
         </div>
       </div>
