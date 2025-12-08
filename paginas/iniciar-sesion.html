@@ -110,29 +110,34 @@
         tabindex="-1"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content p-4 rounded-3">
-            <h2 class="text-center mb-4 fw-bold fs-2">Recuperar Contraseña</h2>
-            <label class="form-label fw-semibold"> Email </label>
-            <input
-              type="email"
-              class="form-control mb-3"
-              placeholder="ejemplo@gmail.com"
-              maxlength="50"
-              minlength="5"
-              required
-            />
-            <p class="text-center mb-4 small">
-              Recibirás un email para restablecer tu contraseña
-            </p>
-            <div class="text-center">
-              <button class="btn btn-outline-success px-5 py-2">
-                Enviar Email
-              </button>
+        <form>
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 rounded-3">
+              <h2 class="text-center mb-4 fw-bold fs-2">
+                Recuperar Contraseña
+              </h2>
+              <label class="form-label fw-semibold"> Email </label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                required
+                placeholder="ejemplo@gmail.com"
+                maxlength="50"
+                minlength="5"
+              />
+
+              <p class="text-center mb-4 small">
+                Recibirás un email para restablecer tu contraseña
+              </p>
+              <div class="text-center">
+                <button class="btn btn-outline-success px-5 py-2">
+                  Enviar Email
+                </button>
+              </div>
             </div>
           </div>
-        </div>
       </div>
+      </form>
     </main>
 
     <footer></footer>
