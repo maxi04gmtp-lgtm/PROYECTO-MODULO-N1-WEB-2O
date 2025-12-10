@@ -1,7 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 * {
   margin: 0;
@@ -32,3 +29,51 @@
   width: 500px;
   
 }
+.estilo-card-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 60%;
+}
+
+.estilo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.estilo-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 70px 24px rgba(0, 0, 0, 0.2);
+}
+
+.experiencia-lista a {
+  color: #198754;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.experiencia-lista a:hover {
+  background-color: #198754;
+  color: #fff;
+  transform: translateX(6px);
+  border-radius: 6px;
+}
+
+.pagination .page-item .page-link {
+        color: #333;
+        border: none;
+        background: transparent;
+        font-size: 1.1rem;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #f27c22; /* Naranja */
+        color: #fff;
+        border-radius: 8px;
+        padding: 6px 14px;
+    }
+
+    .pagination .page-link:hover {
+        background-color: rgba(0,0,0,0.05);
+    }
