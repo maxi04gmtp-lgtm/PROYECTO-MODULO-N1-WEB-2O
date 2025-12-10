@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/estilos.css" />
+  </head>
+  <body>
+    <a
+      href="./Registro.html"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#modalRegistro"
+    >
+      Registro
+    </a>
+
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content p-4">
+          <h2 class="fw-bold text-center mb-4">Suscríbete</h2>
+
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Nombre y Apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="ej:andres perez"
+                  maxlength="50"
+                  minlength="6"
+                  pattern="[A-Za-z ]+"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Nombre de Usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="ej:daniel123"
+                  maxlength="17"
+                  minlength="8"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="ejemplo@gmail.com"
+                  maxlength="50"
+                  minlength="5"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Teléfono</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ej:381 6123456"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                  minlength="10"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Domicilio</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  maxlength="50"
+                  minlength="5"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Código Postal</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="1234"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]{4}"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="********"
+                  maxlength="30"
+                  minlength="10"
+                  id="password"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Repetir Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="********"
+                  maxlength="30"
+                  minlength="10"
+                  id="password2"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-check mt-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="notificaciones"
+              />
+              <label class="form-check-label" for="notificaciones">
+                Recibir notificaciones por Email
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-success mt-4">
+              Suscribirme
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
