@@ -7,7 +7,7 @@
 }
 
 .estilo-video {
-  height: 500px
+  height: 500px;
 }
 
 @media (max-width: 768px) {
@@ -24,10 +24,9 @@
   background: rgba(0, 0, 0, 0.45);
 }
 
-.tapir{
+.tapir {
   height: 500px;
   width: 500px;
-  
 }
 .estilo-card-img {
   height: 200px;
@@ -40,6 +39,9 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .estilo-card:hover {
@@ -61,19 +63,69 @@
 }
 
 .pagination .page-item .page-link {
-        color: #333;
-        border: none;
-        background: transparent;
-        font-size: 1.1rem;
-    }
+  color: #333;
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+}
 
-    .pagination .page-item.active .page-link {
-        background-color: #f27c22; /* Naranja */
-        color: #fff;
-        border-radius: 8px;
-        padding: 6px 14px;
-    }
+.pagination .page-item.active .page-link {
+  background-color: #f27c22; /* Naranja */
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
 
-    .pagination .page-link:hover {
-        background-color: rgba(0,0,0,0.05);
-    }
+.pagination .page-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.estilo-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+.icono-tapir-titulo {
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.encabezado-con-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.modal-open .estilo-card:hover {
+  transform: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imagenes/img-galeria/casita\ de\ tucuman\ 2.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #fff;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: transparent;
+  border: none;
+}
+.modal-header .modal-title {
+  color: #fff;
+}
+
+.modal-header .btn-close {
+  filter: invert(0.5);
+}
