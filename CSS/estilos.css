@@ -10,20 +10,6 @@
   height: 500px;
 }
 
-@media (max-width: 768px) {
-  .hero-video {
-    height: 300px; /* Mobile */
-  }
-}
-
-.hero-video video {
-  object-fit: cover;
-}
-
-.hero-video .overlay {
-  background: rgba(0, 0, 0, 0.45);
-}
-
 .tapir {
   height: 500px;
   width: 500px;
@@ -67,7 +53,7 @@
 }
 
 .pagination .page-item.active .page-link {
-  background-color: #f27c22; /* Naranja */
+  background-color: #f27c22; 
   color: #fff;
   border-radius: 8px;
   padding: 6px 14px;
@@ -76,6 +62,7 @@
 .pagination .page-link:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+
 
 
 .fondo-error404 {
@@ -120,6 +107,16 @@
         padding: 6px 14px;
     }
 
-    .pagination .page-link:hover {
-        background-color: rgba(0,0,0,0.05);
-    }
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 380px;  
+    object-fit: cover; 
+    object-position: 30% 50%  
+  }
+
+  .carousel-caption {
+    font-size: 1.1rem;    
+    bottom: 1.5rem;
+  }
+}
+  
