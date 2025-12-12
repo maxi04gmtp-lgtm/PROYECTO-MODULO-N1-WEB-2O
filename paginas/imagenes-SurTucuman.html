@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset=" UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog sobre la provincia de Tucuman" />
+    <meta name="Keywords" content="Slider," />
+    <meta name="Author" content="Luis Reartez" />
+    <title>Vive Tucuman</title>
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-body-secondary">
+    <header></header>
+    <main>
+      <div class="text-center display-4 my-4 encabezado-con-icono">
+        <h1>Sur de Tucuman</h1>
+        <img
+          src="../imagenes/img-galeria/tapir (1).png"
+          alt="Icono de ubicación"
+          class="icono-tapir-titulo"
+        />
+      </div>
+      <section class="container mt-0">
+        <div class="row g-4">
+          <!--primera cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/concepcion 1.jpg"
+                class="card-img-top estilo-card-img"
+                alt="Concepcion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Concepcion "La Perla del Sur"</h5>
+                <p class="card-text">
+                  La segunda ciudad en importancia de Tucumán (la "Perla del
+                  Sur"). Centro comercial y productivo, es la puerta de entrada
+                  a los valles.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardsuno"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--Segunda cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/escaba 1.jpg"
+                class="card-img-top estilo-card-img"
+                alt="Dique Escaba"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dique Escaba</h5>
+                <p class="card-text">
+                  Embalse artificial ubicado en una zona montañosa del sur.
+                  Famoso por su belleza natural, la pesca deportiva y el
+                  misterio de sus historias y mitos locales.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardsdos"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--tercera cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/cascada 1.jpg"
+                class="card-img-top estilo-card-img"
+                alt="Cascada los pizzaro"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cascada de los Pizarros</h5>
+                <p class="card-text">
+                  Hermosa caída de agua natural oculta entre la vegetación de
+                  las Yungas. Un destino popular de trekking que requiere
+                  caminata para llegar a sus pozos de agua.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardstres"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--cuarta cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/rumi punco 1.jpg"
+                class="card-img-top estilo-card-img"
+                alt="Rumi Punco"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tuneles de Rumi Punco</h5>
+                <p class="card-text">
+                  Conjunto de antiguos túneles ferroviarios abandonados. Forman
+                  parte de un paisaje histórico y natural que evoca el pasado
+                  del ferrocarril en el sur tucumano.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardscuatro"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--modalcardsuno-->
+    <div
+      class="modal fade"
+      id="modalcardsuno"
+      tabindex="-1"
+      aria-labelledby="modalcardsunoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcardsunoLabel">
+              Galería de Fotos - Concepcion
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="catedralCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#catedralCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#catedralCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#catedralCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/concepcion 2.jpg"
+                    class="d-block w-100"
+                    alt="Concepcion"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/concepcion 3.jpg"
+                    class="d-block w-100"
+                    alt="concepcion dos"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/concepcion 4.jpg"
+                    class="d-block w-100"
+                    alt="Concepcion tres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#catedralCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#catedralCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modalcardsdos-->
+    <div
+      class="modal fade"
+      id="modalcardsdos"
+      tabindex="-1"
+      aria-labelledby="modalcardsdosLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcardsdosLabel">
+              Galería de Fotos - Dique Escaba
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="casaHistoricaCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#casaHistoricaCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaHistoricaCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaHistoricaCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/escaba 2.jpg"
+                    class="d-block w-100"
+                    alt="Dique Escaba"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/escaba 3.jpg"
+                    class="d-block w-100"
+                    alt="Dique Escaba dos"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/escaba 4.jpg"
+                    class="d-block w-100"
+                    alt="Dique Escaba tres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#casaHistoricaCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#casaHistoricaCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modalcardstres-->
+    <div
+      class="modal fade"
+      id="modalcardstres"
+      tabindex="-1"
+      aria-labelledby="modalcardstresLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcardstresLabel">
+              Galería de Fotos - Cascada los Pizarros
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="casaGobiernoCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#casaGobiernoCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaGobiernoCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaGobiernoCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/cascada 2.jpg"
+                    class="d-block w-100"
+                    alt="Cascada"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/cascada 3.jpg"
+                    class="d-block w-100"
+                    alt="Cascada dos"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/cascada 4.jpg"
+                    class="d-block w-100"
+                    alt="Cascada tres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#casaGobiernoCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#casaGobiernoCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modalcardscuatro-->
+    <div
+      class="modal fade"
+      id="modalcardscuatro"
+      tabindex="-1"
+      aria-labelledby="modalcardscuatro"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcadscautroLabel">
+              Galería de Fotos - Tuneles de Rumi Punco
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="plazaIndependenciaCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#plazaIndependenciaCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#plazaIndependenciaCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#plazaIndependenciaCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/rumi punco 2.jpg"
+                    class="d-block w-100"
+                    alt="Tuneles"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/rumi punco 3.jpg"
+                    class="d-block w-100"
+                    alt="Tuneles dos"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/rumi punco 4.jpg"
+                    class="d-block w-100"
+                    alt="Tuneles tres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#plazaIndependenciaCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#plazaIndependenciaCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
