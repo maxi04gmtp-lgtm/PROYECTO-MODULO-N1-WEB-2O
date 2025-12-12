@@ -102,3 +102,24 @@
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+        color: #333;
+        border: none;
+        background: transparent;
+        font-size: 1.1rem;
+    }
+
+    .estilo-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 70px 24px rgba(0,0,0,0.2);
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #f27c22; /* Naranja */
+        color: #fff;
+        border-radius: 8px;
+        padding: 6px 14px;
+    }
+
+    .pagination .page-link:hover {
+        background-color: rgba(0,0,0,0.05);
+    }
