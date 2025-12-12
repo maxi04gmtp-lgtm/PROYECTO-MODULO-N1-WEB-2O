@@ -10,24 +10,11 @@
   height: 500px
 }
 
-@media (max-width: 768px) {
-  .hero-video {
-    height: 300px; /* Mobile */
-  }
-}
 
-.hero-video video {
-  object-fit: cover;
-}
-
-.hero-video .overlay {
-  background: rgba(0, 0, 0, 0.45);
-}
 
 .tapir{
   height: 500px;
   width: 500px;
-  
 }
 .estilo-card-img {
   height: 200px;
