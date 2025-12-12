@@ -64,6 +64,49 @@
 }
 
 
+
+.fondo-error404 {
+  background-image: url(https://i.pinimg.com/originals/06/1e/7d/061e7d436de6aec2e3f1df3f40660c3e.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tapir404-img {
+  max-width: 350px; 
+  width: 90%;
+}
+
+.boton-volver-al-inicio {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.boton-volver-al-inicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+        color: #333;
+        border: none;
+        background: transparent;
+        font-size: 1.1rem;
+    }
+
+    .estilo-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 70px 24px rgba(0,0,0,0.2);
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #f27c22; /* Naranja */
+        color: #fff;
+        border-radius: 8px;
+        padding: 6px 14px;
+    }
+
 @media (max-width: 576px) {
   .carousel-item img {
     height: 380px;  
