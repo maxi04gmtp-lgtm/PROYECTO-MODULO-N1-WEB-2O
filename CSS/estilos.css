@@ -7,12 +7,10 @@
 }
 
 .estilo-video {
-  height: 500px
+  height: 500px;
 }
 
-
-
-.tapir{
+.tapir {
   height: 500px;
   width: 500px;
 }
@@ -48,19 +46,19 @@
 }
 
 .pagination .page-item .page-link {
-        color: #333;
-        border: none;
-        background: transparent;
-        font-size: 1.1rem;
-    }
+  color: #333;
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+}
 
-    .pagination .page-item.active .page-link {
-        background-color: #f27c22; /* Naranja */
-        color: #fff;
-        border-radius: 8px;
-        padding: 6px 14px;
-    }
+.pagination .page-item.active .page-link {
+  background-color: #f27c22; 
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
 
-    .pagination .page-link:hover {
-        background-color: rgba(0,0,0,0.05);
-    }
+.pagination .page-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
