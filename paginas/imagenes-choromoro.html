@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset=" UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog sobre la provincia de Tucuman" />
+    <meta name="Keywords" content="Slider," />
+    <meta name="Author" content="Luis Reartez" />
+    <title>Vive Tucuman</title>
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-body-secondary">
+    <header></header>
+    <main>
+      <div class="text-center display-4 my-4 encabezado-con-icono">
+        <h1>Valle de Choromoro</h1>
+        <img
+          src="../imagenes/img-galeria/tapir (1).png"
+          alt="Icono de ubicación"
+          class="icono-tapir-titulo"
+        />
+      </div>
+      <section class="container mt-0">
+        <div class="row g-4">
+          <!--primera cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/san pedro 1.jpg"
+                class="card-img-top estilo-card-img"
+                alt="San Pedro"
+              />
+              <div class="card-body">
+                <h5 class="card-title">San Pedro de Colalao</h5>
+                <p class="card-text">
+                  Villa veraniega tradicional del norte tucumano. Reconocida por
+                  su tranquilidad, su clima agradable, y por sus sitios de
+                  arqueología y leyendas.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardsuno"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--Segunda cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/trancas 1.JPG"
+                class="card-img-top estilo-card-img"
+                alt="Trancas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Trancas</h5>
+                <p class="card-text">
+                  Histórico pueblo del norte con una rica tradición colonial. Es
+                  un punto clave del turismo rural, famoso por su Museo y la
+                  Posta de Trancas.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardsdos"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--tercera cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/puente del indio 1.jpg"
+                class="card-img-top estilo-card-img"
+                alt="Puente del indio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Puente del Indio y Gruta de Lourdes</h5>
+                <p class="card-text">
+                  Atractivo natural y místico de San Pedro de Colalao. El sitio
+                  incluye un puente de roca natural y una gruta asociada a
+                  leyendas indígenas.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardstres"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--cuarta cards-->
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card estilo-card h-100">
+              <img
+                src="../imagenes/img-galeria/reserva 1.jpg"
+                class="card-img-top estilo-card-img"
+                alt="Reserva"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Reserva Fito Zoologica</h5>
+                <p class="card-text">
+                  Reserva privada de fauna y flora en San Miguel de Tucumán. Se
+                  dedica a la conservación y exhibición de especies animales y
+                  botánicas en un entorno natural.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalcardscuatro"
+                >
+                  Galería</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--modalcardsuno-->
+    <div
+      class="modal fade"
+      id="modalcardsuno"
+      tabindex="-1"
+      aria-labelledby="modalcardsunoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcardsunoLabel">
+              Galería de Fotos - San Pedro de Colalao
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="catedralCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#catedralCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#catedralCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#catedralCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/san pedro 2.jpg"
+                    class="d-block w-100"
+                    alt="San Pedro"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/san pedro 3.jpg"
+                    class="d-block w-100"
+                    alt="San Pedro dos"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/san pedro 4.jpg"
+                    class="d-block w-100"
+                    alt="San Pedro tres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#catedralCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#catedralCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modalcardsdos-->
+    <div
+      class="modal fade"
+      id="modalcardsdos"
+      tabindex="-1"
+      aria-labelledby="modalcardsdosLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcardsdosLabel">
+              Galería de Fotos - Trancas
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="casaHistoricaCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#casaHistoricaCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaHistoricaCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaHistoricaCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/trancas 2.jpg"
+                    class="d-block w-100"
+                    alt="Trancas"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/trancas 3.jpg"
+                    class="d-block w-100"
+                    alt="Trancas dos"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/trancas 4.jpg"
+                    class="d-block w-100"
+                    alt="Trancas tres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#casaHistoricaCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#casaHistoricaCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modalcardstres-->
+    <div
+      class="modal fade"
+      id="modalcardstres"
+      tabindex="-1"
+      aria-labelledby="modalcardstresLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcardstresLabel">
+              Galería de Fotos - Puente del Indio, gruta de lourdes
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="casaGobiernoCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#casaGobiernoCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaGobiernoCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#casaGobiernoCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/puente del indio 2.jpg"
+                    class="d-block w-100"
+                    alt="Puente del indio"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/virgen del lourdes 1.jpg"
+                    class="d-block w-100"
+                    alt="Gruta"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/virgen de lourdes 2.jpg"
+                    class="d-block w-100"
+                    alt="Lourdes dos"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#casaGobiernoCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#casaGobiernoCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modalcardscuatro-->
+    <div
+      class="modal fade"
+      id="modalcardscuatro"
+      tabindex="-1"
+      aria-labelledby="modalcardscuatro"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcadscautroLabel">
+              Galería de Fotos - Reserva Fitozologica
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="plazaIndependenciaCarousel"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#plazaIndependenciaCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#plazaIndependenciaCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#plazaIndependenciaCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../imagenes/img-galeria/reserva 2.jpg"
+                    class="d-block w-100"
+                    alt="Reserva"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/reserva 3.jpg"
+                    class="d-block w-100"
+                    alt="Reserva dos"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../imagenes/img-galeria/reserva 4.jpg"
+                    class="d-block w-100"
+                    alt="Reserva tres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#plazaIndependenciaCarousel"
+                data-bs-slide="prev"
+              ></button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#plazaIndependenciaCarousel"
+                data-bs-slide="next"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-warning"
+              data-bs-dismiss="modal"
+            >
+              Cerrar Galería
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
