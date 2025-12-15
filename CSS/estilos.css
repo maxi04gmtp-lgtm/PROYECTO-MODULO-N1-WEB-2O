@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main{
+  flex: 1;
+}
+
 .estilo-video {
   height: 500px;
 }
@@ -115,7 +125,6 @@
   font-weight: 600;
 }
 
-
 .diseño-active::after {
   content: "";
   position: absolute;
@@ -125,6 +134,8 @@
   height: 3px;
   background-color: #198754;
   border-radius: 5px;
+}
+
 .estilo-card .card-body {
   flex-grow: 1;
   display: flex;
@@ -173,4 +184,47 @@ body.modal-open .estilo-card:hover {
 
 .modal-header .btn-close {
   filter: invert(0.5);
+}
+
+.color-footer{
+  background-color: #f4ebde;
+}
+
+.redes-sociales-link {
+  font-size: 1.5rem;
+  color: #198754; 
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.redes-sociales-link:hover {
+  color: #145c32;
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.footer-link {
+  color: #212529;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #198754;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #198754;
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
