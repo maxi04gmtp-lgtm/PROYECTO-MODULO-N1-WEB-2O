@@ -6,14 +6,22 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-main{
+main {
   flex: 1;
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+    object-position: 30% 0%;
+  }
 }
 
 .estilo-video {
@@ -186,13 +194,13 @@ body.modal-open .estilo-card:hover {
   filter: invert(0.5);
 }
 
-.color-footer{
+.color-footer {
   background-color: #f4ebde;
 }
 
 .redes-sociales-link {
   font-size: 1.5rem;
-  color: #198754; 
+  color: #198754;
   transition: transform 0.3s ease, color 0.3s ease;
   display: inline-block;
 }
