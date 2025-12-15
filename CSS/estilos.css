@@ -80,6 +80,51 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.logo {
+  width: 80px;
+  border-radius: 20px;
+  margin: 15px 25px;
+}
+
+.color-nav {
+  background-color: #f4ebde;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #198754;
+  transform: translateY(-3px);
+}
+
+.diseño-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.diseño-link:hover {
+  color: #198754;
+}
+
+.diseño-active {
+  font-weight: 600;
+}
+
+
+.diseño-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background-color: #198754;
+  border-radius: 5px;
 .estilo-card .card-body {
   flex-grow: 1;
   display: flex;
