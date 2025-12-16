@@ -19,7 +19,7 @@
   <header>
     <nav class="navbar navbar-expand-lg color-nav fixed-top py-0  shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand " href="#">
+        <a class="navbar-brand " href="../index.html">
           <img src="../imagenes/logo.png" class="logo nav-link" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMockup">
@@ -28,20 +28,21 @@
         <div class="collapse navbar-collapse" id="navbarMockup">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 ">
             <li class="nav-item fs-5">
-              <a class="nav-link " href="#"><i class="bi bi-globe-americas m-1"></i>Inicio</a>
+              <a class="nav-link " href="../index.html"><i class="bi bi-globe-americas m-1"></i>Inicio</a>
             </li>
             <li class="nav-item fs-5">
-              <a class="nav-link" href="#"><i class="bi bi-envelope-fill m-1"></i> Contacto</a>
+              <a class="nav-link" href="./Contactos.html"><i class="bi bi-envelope-fill m-1"></i> Contacto</a>
             </li>
             <li class="nav-item fs-5">
-              <a class="nav-link" href="#"><i class="bi bi-people-fill m-1"></i>Acerca de nosotros</a>
+              <a class="nav-link" href="./sobre.nosotros.html"><i class="bi bi-people-fill m-1"></i>Acerca de
+                nosotros</a>
             </li>
           </ul>
           <div class="d-flex gap-2 fs-5">
-            <a href="#" class="btn btn-outline-secondary btn-sm">
+            <a href="./iniciar-sesion.html" class="btn btn-outline-secondary btn-sm">
               <i class="bi bi-person-fill m-1"></i>Iniciar sesión
             </a>
-            <a href="#" class="btn btn-success btn-sm">
+            <a href="#" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalRegistro">
               <i class="bi bi-person-plus-fill m-1"></i>Suscribirte
             </a>
           </div>
@@ -138,36 +139,106 @@
 
         <div class="col-md-3 mb-3 mb-md-0">
           <div class="py-2 d-inline-block">
-            <a href=""><img src="../imagenes/logo.png" class="logo nav-link" alt="logo"></a>
+            <a href="../index.html"><img src="../imagenes/logo.png" class="logo nav-link" alt="logo"></a>
           </div>
         </div>
 
         <div class="col-md-6 mb-3 mb-md-0 text-center">
           <p class="fw-semibold mb-2">Comunicate y Conocé Tucumán</p>
           <div class="d-flex justify-content-center gap-3 fs-4 diseño-link">
-            <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-youtube"></i></a>
-            <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-envelope"></i></a>
-            <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-whatsapp"></i></a>
+            <a href="./Error404.html" class="text-dark redes-sociales-link"><i class="bi bi-facebook"></i></a>
+            <a href="./Error404.html" class="text-dark redes-sociales-link"><i class="bi bi-instagram"></i></a>
+            <a href="./Error404.html" class="text-dark redes-sociales-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="./Error404.html" class="text-dark redes-sociales-link"><i class="bi bi-youtube"></i></a>
+            <a href="./Error404.html" class="text-dark redes-sociales-link"><i class="bi bi-envelope"></i></a>
+            <a href="./Error404.html" class="text-dark redes-sociales-link"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
 
         <div class="col-md-3">
           <h6 class="fw-bold">Navegación</h6>
           <ul class="list-unstyled diseño-link">
-            <li><a href="#" class="text-decoration-none text-dark footer-link">Inicio</a></li>
-            <li><a href="#" class="text-decoration-none text-dark footer-link">Contacto</a></li>
-            <li><a href="#" class="text-decoration-none text-dark footer-link">Acerca de Nosotros</a></li>
-            <li><a href="#" class="text-decoration-none text-dark footer-link">Iniciar Sesión</a></li>
+            <li><a href="../index.html" class="text-decoration-none text-dark footer-link">Inicio</a></li>
+            <li><a href="./Contactos.html" class="text-decoration-none text-dark footer-link">Contacto</a></li>
+            <li><a href="./sobre.nosotros.html" class="text-decoration-none text-dark footer-link">Acerca de
+                Nosotros</a></li>
+            <li><a href="./iniciar-sesion.html" class="text-decoration-none text-dark footer-link">Iniciar Sesión</a>
+            </li>
             <li><a href="#" class="text-decoration-none text-dark footer-link">Suscribirte</a></li>
           </ul>
         </div>
-
       </div>
     </div>
   </footer>
+  <div class="modal fade" id="modalRegistro" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content p-4">
+        <h2 class="fw-bold text-center mb-4">Suscríbete</h2>
+
+        <form class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" placeholder="ej:andres perez" maxlength="50" minlength="6"
+                pattern="[A-Za-z ]+" required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Nombre de Usuario</label>
+              <input type="text" class="form-control" placeholder="ej:daniel123" maxlength="17" minlength="8"
+                required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" placeholder="ejemplo@gmail.com" maxlength="50" minlength="5"
+                required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Teléfono</label>
+              <input type="text" class="form-control" placeholder="Ej:381 6123456" pattern="[0-9]{10}" maxlength="10"
+                minlength="10" required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Domicilio</label>
+              <input type="text" class="form-control" maxlength="50" minlength="5" required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Código Postal</label>
+              <input type="text" class="form-control" placeholder="1234" maxlength="4" minlength="4" pattern="[0-9]{4}"
+                required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Contraseña</label>
+              <input type="password" class="form-control" placeholder="********" maxlength="30" minlength="10"
+                id="password" required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Repetir Contraseña</label>
+              <input type="password" class="form-control" placeholder="********" maxlength="30" minlength="10"
+                id="password2" required />
+            </div>
+          </div>
+
+          <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" id="notificaciones" />
+            <label class="form-check-label" for="notificaciones">
+              Recibir notificaciones por Email
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-success mt-4">
+            Suscribirme
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
