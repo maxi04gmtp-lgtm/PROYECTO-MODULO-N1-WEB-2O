@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Blog sobre la provincia de Tucuman" />
     <meta name="Keywords" content="Slider," />
-    <meta name="Author" content="Luis Reartez" />
+    <meta name="Author" content="Gabriel" />
     <title>Vive Tucuman</title>
     <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,24 +14,57 @@
       href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/Estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/Estilos.css" />
   </head>
 
-  <body class="bg-body-secondary">
-    <header></header>
+  <body class="bg-body-secondary pt-5">
+  <header>
+    <nav class="navbar navbar-expand-lg color-nav fixed-top py-0  shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#">
+          <img src="../imagenes/logo.png" class="logo nav-link" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMockup">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMockup">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 ">
+            <li class="nav-item fs-5">
+              <a class="nav-link " href="#"><i class="bi bi-globe-americas m-1"></i>Inicio</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="#"><i class="bi bi-envelope-fill m-1"></i> Contacto</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="#"><i class="bi bi-people-fill m-1"></i>Acerca de nosotros</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2 fs-5">
+            <a href="#" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-person-fill m-1"></i>Iniciar sesión
+            </a>
+            <a href="#" class="btn btn-success btn-sm">
+              <i class="bi bi-person-plus-fill m-1"></i>Suscribirte
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
-      <div class="text-center display-4 my-4 encabezado-con-icono">
-        <h1>Sur de Tucuman</h1>
+      <div class="text-center display-4 my-4 mt-5 encabezado-con-icono">
+        <h1 class="mt-5">Sur de Tucumán</h1>
         <img
           src="../imagenes/img-galeria/tapir (1).png"
           alt="Icono de ubicación"
-          class="icono-tapir-titulo"
+          class="icono-tapir-titulo mt-4"
         />
       </div>
       <section class="container mt-0">
@@ -535,7 +568,42 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer class="color-footer pe-5 pt-2">
+      <div class="container fluid">
+        <div class="row align-items-center text-center text-md-start">
+    
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="py-2 d-inline-block">
+              <a href=""><img src="../imagenes/logo.png" class="logo nav-link" alt="logo"></a>
+            </div>
+          </div>
+    
+          <div class="col-md-6 mb-3 mb-md-0 text-center">
+            <p class="fw-semibold mb-2">Comunicate y Conocé Tucumán</p>
+            <div class="d-flex justify-content-center gap-3 fs-4 diseño-link">
+              <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-envelope"></i></a>
+              <a href="#" class="text-dark redes-sociales-link"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+    
+          <div class="col-md-3">
+            <h6 class="fw-bold">Navegación</h6>
+            <ul class="list-unstyled diseño-link">
+              <li><a href="#" class="text-decoration-none text-dark footer-link">Inicio</a></li>
+              <li><a href="#" class="text-decoration-none text-dark footer-link">Contacto</a></li>
+              <li><a href="#" class="text-decoration-none text-dark footer-link">Acerca de Nosotros</a></li>
+              <li><a href="#" class="text-decoration-none text-dark footer-link">Iniciar Sesión</a></li>
+              <li><a href="#" class="text-decoration-none text-dark footer-link">Suscribirte</a></li>
+            </ul>
+          </div>
+    
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
