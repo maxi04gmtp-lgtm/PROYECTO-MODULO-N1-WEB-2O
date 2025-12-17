@@ -3,3 +3,250 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+    object-position: 30% 0%;
+  }
+}
+
+.estilo-video {
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: 300px; /* Mobile */
+  }
+}
+
+.hero-video video {
+  object-fit: cover;
+}
+
+.hero-video .overlay {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.tapir {
+  height: 500px;
+  width: 500px;
+}
+.estilo-card-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 60%;
+}
+
+.estilo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.estilo-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 70px 24px rgba(0, 0, 0, 0.2);
+}
+
+.experiencia-lista a {
+  color: #198754;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.experiencia-lista a:hover {
+  background-color: #198754;
+  color: #fff;
+  transform: translateX(6px);
+  border-radius: 6px;
+}
+
+.pagination .page-item .page-link {
+  color: #333;
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #f27c22; /* Naranja */
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+
+.pagination .page-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 80px;
+  border-radius: 20px;
+  margin: 15px 25px;
+}
+
+.color-nav {
+  background-color: #f4ebde;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #198754;
+  transform: translateY(-3px);
+}
+
+.diseño-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.diseño-link:hover {
+  color: #198754;
+}
+
+.diseño-active {
+  font-weight: 600;
+}
+
+.diseño-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background-color: #198754;
+  border-radius: 5px;
+}
+
+.estilo-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+.icono-tapir-titulo {
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.encabezado-con-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.modal-open .estilo-card:hover {
+  transform: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imagenes/img-galeria/casita\ de\ tucuman\ 2.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #fff;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: transparent;
+  border: none;
+}
+.modal-header .modal-title {
+  color: #fff;
+}
+
+.modal-header .btn-close {
+  filter: invert(0.5);
+}
+
+.color-footer {
+  background-color: #f4ebde;
+}
+
+.redes-sociales-link {
+  font-size: 1.5rem;
+  color: #198754;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.redes-sociales-link:hover {
+  color: #145c32;
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.footer-link {
+  color: #212529;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #198754;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #198754;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.fondo-error404 {
+  background-image: url('https://i.pinimg.com/originals/06/1e/7d/061e7d436de6aec2e3f1df3f40660c3e.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex;
+}
+
+.tapir404-img {
+  max-width: 350px;
+  width: 90%;
+
+}
+
